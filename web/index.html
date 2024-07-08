@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Buddy</title>
+  <link rel="icon" href="chat.png" type="image/png">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <main class="container text-center mt-5">
+    <h1>Buddy</h1>
+    <form class="mt-4" id="geminiForm">
+      <div class="form-group row justify-content-center align-items-center">
+        <div class="col-sm-8 col-md-6 col-lg-4">
+          <input name="prompt" class="form-control" placeholder="Enter instructions here" type="text" value="">
+        </div>
+        <div class="ml-2">
+          <button type="submit" class="btn btn-success btn-shape" id="GO">Go</button>
+        </div>
+        <div class="ml-2">
+          <button id="copyButton" class="btn btn-warning btn-shape">Copy</button>
+        </div>
+        <div class="ml-2">
+          <p id="theme"><i class="fa-solid fa-sun"></i></p>
+        </div>
+      </div>
+    </form>
+    <div class="output mt-4">
+      <p>(Results will appear here)</p>
+    </div>
+  </main>
+
+  <script type="module" src="/main.js"></script>
+  <script src="https://unpkg.com/markdown-it@8.4.2/dist/markdown-it.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>

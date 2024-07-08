@@ -1,0 +1,90 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+  transition: background-color 0.3s ease; /* Smooth transition for background color change */
+  color: #333; /* Default text color */
+}
+
+main {
+  background:  #f5f5f5;
+  padding: 2em;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 600px;
+  overflow-y: auto;
+  max-height: 90vh; /* Adjust this value as needed */
+  transition: background-color 0.3s ease; /* Smooth transition for background color change */
+  margin: 0 auto; /* Center the main content */
+}
+
+h1 {
+  font-size: 2em;
+  color: #333;
+  transition: color 0.3s ease; /* Smooth transition for text color change */
+  margin-bottom: 1em; /* Add margin for spacing */
+}
+
+.output {
+  font-size: 1em;
+  color: #666;
+  border-top: 1px solid #e0e0e0;
+  padding-top: 1em;
+}
+
+.btn-shape {
+  border-radius: 14rem;
+  width: 5rem;
+}
+
+#theme {
+  margin-top: 1rem;
+  cursor: pointer;
+}
+
+/* Dark theme styles */
+body.dark-theme {
+  background-color: #121212;
+  color: #ffffff; /* Text color for dark theme */
+}
+
+main.dark-theme {
+  background-color: #333;
+  color: #ffffff; /* Text color for dark theme */
+}
+
+body.dark-theme h1 {
+  color: #ffffff; /* Ensure h1 text color is white in dark mode */
+}
+
+body.dark-theme .output {
+  color: #ffffff; /* Set output text color to white in dark mode */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  main {
+    padding: 1.5em;
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 576px) {
+  main {
+    padding: 1em;
+  }
+
+  h1 {
+    font-size: 1.8em;
+  }
+
+  .btn-shape {
+    width: 4rem;
+  }
+}
