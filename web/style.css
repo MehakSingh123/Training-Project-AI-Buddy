@@ -1,46 +1,47 @@
 body {
   font-family: 'Arial', sans-serif;
-  background-color: white;
+  background: linear-gradient(135deg, #e0f7fa, #fffde7); /* Gradient background for a fresh look */
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
   margin: 0;
   overflow: hidden;
-  transition: background-color 0.3s ease; /* Smooth transition for background color change */
-  color: #333; /* Default text color */
+  transition: background-color 0.3s ease;
+  color: #333;
 }
 
 main {
-  background:  #f5f5f5;
+  background: #ffffff; /* White background for the main content */
   padding: 2em;
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 12px; /* Slightly larger border radius for softer corners */
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1); /* Enhanced shadow for depth */
   width: 100%;
   max-width: 600px;
   overflow-y: auto;
-  max-height: 90vh; /* Adjust this value as needed */
-  transition: background-color 0.3s ease; /* Smooth transition for background color change */
-  margin: 0 auto; /* Center the main content */
+  max-height: 90vh; 
+  transition: background-color 0.3s ease; 
+  margin: 0 auto; 
 }
 
 h1 {
-  font-size: 2em;
-  color: #333;
-  transition: color 0.3s ease; /* Smooth transition for text color change */
-  margin-bottom: 1em; /* Add margin for spacing */
+  font-size: 2.5em; /* Increased font size for better visibility */
+  color: #007bff; /* Change color to match the theme */
+  transition: color 0.3s ease; 
+  margin-bottom: 1.5em; 
 }
 
 .output {
-  font-size: 1em;
+  font-size: 1.2em; /* Slightly larger font size */
   color: #666;
-  border-top: 1px solid #e0e0e0;
+  border-top: 2px solid #e0e0e0; /* Thicker top border for separation */
   padding-top: 1em;
+  animation: fadeIn 0.5s ease; /* Animation for output section */
 }
 
 .btn-shape {
-  border-radius: 14rem;
-  width: 5rem;
+  border-radius: 50px; /* More pronounced rounded corners */
+  width: 6rem; /* Adjusted width for better button size */
 }
 
 #theme {
@@ -51,20 +52,20 @@ h1 {
 /* Dark theme styles */
 body.dark-theme {
   background-color: #121212;
-  color: #ffffff; /* Text color for dark theme */
+  color: #ffffff; 
 }
 
 main.dark-theme {
-  background-color: #333;
-  color: #ffffff; /* Text color for dark theme */
+  background-color: #1e1e1e; /* Darker background for main section */
+  color: #ffffff; 
 }
 
 body.dark-theme h1 {
-  color: #ffffff; /* Ensure h1 text color is white in dark mode */
+  color: #ffffff; 
 }
 
 body.dark-theme .output {
-  color: #ffffff; /* Set output text color to white in dark mode */
+  color: #ffffff; 
 }
 
 /* Responsive adjustments */
@@ -81,10 +82,31 @@ body.dark-theme .output {
   }
 
   h1 {
-    font-size: 1.8em;
+    font-size: 2em; /* Adjusted for smaller screens */
   }
 
   .btn-shape {
-    width: 4rem;
+    width: 5rem; /* Adjusted button size for smaller screens */
+  }
+}
+
+#micIcon {
+  font-size: 26px; /* Slightly larger for better visibility */
+  color: #007bff; /* Change color to match the theme */
+  margin-left: 5px; /* Add space between icon and button */
+  transition: color 0.3s; /* Transition for hover effect */
+}
+
+#micIcon:hover {
+  color: #0056b3; /* Change color on hover for interaction feedback */
+}
+
+/* Fade-in animation for output section */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }
